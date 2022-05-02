@@ -1,0 +1,181 @@
+body {
+    margin: 0px;
+    font-size: 1.1rem;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.light-mode {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+#capa {
+    border-bottom: 1px solid #252525;
+    height: 60vh;
+    background-image: url('../img/main_full.png');
+    background-repeat: no-repeat;
+    background-size: auto 60vh;
+    background-position: right top;
+    background-color: #fbf8f4;
+}
+
+#foto {
+    height: 40vh;
+    width: auto;
+}
+
+#fotoLink {
+    position: relative;
+    left: 5vw;
+    top: 30vh;
+}
+
+#nome {
+    position: relative;
+    left: calc(40vh + 5vw);
+    width: max-content;
+}
+
+#localizacao {
+    position: relative;
+    left: calc(40vh + 5vw);
+    width: max-content;
+}
+
+
+/*Para usuarios com base no Chromium (Chrome, Microsoft Edge Insider, Opera)*/
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+    background: #afafaf00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7f7f7f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7f7f7f;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #capa {
+        height: 40vh;
+        background-size: auto 40vh;
+    }
+
+    #foto {
+        height: 35vh;
+    }
+
+    #fotoLink {
+        top: 14.5vh;
+    }
+
+    #nome {
+        left: calc(35vh + 5vw);
+    }
+    #localizacao {
+        left: calc(35vh + 5vw);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #capa {
+        height: 40vh;
+        background-size: auto 40vh;
+    }
+
+    #foto {
+        height: 35vh;
+    }
+
+    #fotoLink {
+        top: 14.5vh;
+    }
+
+    #nome {
+        left: calc(35vh + 5vw);
+    }
+
+    #localizacao {
+        left: calc(35vh + 5vw);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #capa {
+        height: 40vh;
+        background-size: auto 40vh;
+    }
+
+    #foto {
+        height: 30vh;
+    }
+
+    #fotoLink {
+        top: 17.5vh;
+    }
+
+    #nome {
+        left: calc(30vh + 5vw);
+    }
+
+    #localizacao {
+        left: calc(30vh + 5vw);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #capa {
+        height: 35vh;
+        background-size: auto 35vh;
+    }
+
+    #foto {
+        height: 20vh;
+    }
+
+    #fotoLink {
+        top: 20vh;
+    }
+
+    #nome {
+        left: calc(20vh + 5vw);
+    }
+    #localizacao {
+        left: calc(20vh + 5vw);
+    }
+}
+
+@media (min-width: 1px) and (max-width: 319px) {
+    #capa {
+        height: 20vh;
+        background-size: auto 20vh;
+    }
+
+    #foto {
+        height: 15vh;
+    }
+
+    #fotoLink {
+        top: 8.75vh;
+    }
+
+    #nome {
+        left: unset;
+        text-align: center;
+        margin-top: 4vh;
+        width: auto;
+    }
+
+    #localizacao {
+        left: unset;
+        text-align: center;
+        width: auto;
+    }
+}
