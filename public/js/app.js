@@ -4,6 +4,7 @@ $(async function () {
     // Events clicks
     $("#dark_light").click(function () { toggleDarkLight() });
     $(".language-change").click(function () { changeLanguage($(this).attr("data-language")) });
+    fbButtom();
 
     //Language check
     jsonLanguage = await getJs("public/json/language.json");
@@ -105,4 +106,15 @@ function getTheme() {
 
 function setTheme(data) {
     localStorage.setItem("theme", JSON.stringify(data));
+}
+
+function fbButtom() {
+    let details = navigator.userAgent;
+    let regexp = /android|iphone|kindle|ipad/i;
+    let isMobileDevice = regexp.test(details);
+
+    if (isMobileDevice)
+        $("#facebook-mobile").removeClass("d-none");
+    else
+        $("#facebook-desktop").removeClass("d-none");
 }
