@@ -9,6 +9,10 @@ $(async function () {
     jsonLanguage = await getJs("public/json/language.json");
     let language = getLanguage();
     changeLanguage(language["language"]);
+
+    //Theme check
+    $(".tema").removeClass("dark-mode").removeClass("light-mode").addClass(getTheme());
+    $("body").removeClass("dark-mode").removeClass("light-mode").addClass(getTheme());
 });
 
 async function getJs(json) {
@@ -87,4 +91,15 @@ function toggleDarkLight() {
     var newClass = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
     tema.removeClass(currentClass).addClass(newClass);
     $("body").removeClass(currentClass).addClass(newClass);
+    setTheme(newClass);
+}
+
+function getTheme() {
+    if (localStorage.theme == undefined)
+        setLanguage({ "theme": "light-mode" });
+    return JSON.parse(localStorage.theme);
+}
+
+function setTheme(data) {
+    localStorage.setItem("theme", JSON.stringify(data));
 }
