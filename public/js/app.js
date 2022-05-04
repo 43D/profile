@@ -96,7 +96,7 @@ function toggleDarkLight() {
 
 function getTheme() {
     if (localStorage.theme == undefined)
-        setLanguage({ "theme": "light-mode" });
+        setTheme({ "theme": "light-mode" });
     return JSON.parse(localStorage.theme);
 }
 
