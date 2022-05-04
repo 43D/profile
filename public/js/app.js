@@ -37,8 +37,11 @@ function changeLanguage(language) {
         $("#apresentacao").html(languageCurrent["apresentacao"]["p"]);
         $("#hub1").html(languageCurrent["apresentacao"]["hub"][0]);
         $("#hub2").html(languageCurrent["apresentacao"]["hub"][1]);
+        $("#skills-name").html(languageCurrent["hard-skills"]["name"]);
         makeil("#hard-skills", languageCurrent["hard-skills"]["list"]);
+        $("#estudando-name").html(languageCurrent["estudando"]["name"]);
         makeil("#estudando", languageCurrent["estudando"]["list"]);
+        $("#formacao-name").html(languageCurrent["formacao"]["name"]);
         makeil2("#formacao", languageCurrent["formacao"]["list"]);
         setLanguage({ "language": language });
         setButtomLanguage(language);

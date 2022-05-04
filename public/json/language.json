@@ -15,6 +15,7 @@
             ]
         },
         "hard-skills": {
+            "name":"Hard Skills",
             "list": [
                 "HTML5",
                 "CSS3",
@@ -33,15 +34,17 @@
             ]
         },
         "estudando": {
+            "name":"Studying...",
             "list": [
                 "Java Web - JSF & Servlet",
-                "Java JPA & Hubernate",
+                "Java JPA & Hibernate",
                 "C# MVC & POO",
-                "C# em back-end",
+                "C# in back-end",
                 "C# & Unity"
             ]
         },
         "formacao": {
+            "name":"Training & Experience",
             "list": [
                 {
                     "1": "Technical High School at",
@@ -72,6 +75,7 @@
             ]
         },
         "hard-skills": {
+            "name":"Habilidades",
             "list": [
                 "HTML5",
                 "CSS3",
@@ -90,15 +94,17 @@
             ]
         },
         "estudando": {
+            "name":"Estudiando...",
             "list": [
                 "Java Web - JSF & Servlet",
-                "Java JPA & Hubernate",
+                "Java JPA & Hibernate",
                 "C# MVC & POO",
-                "C# em back-end",
+                "C# en back-end",
                 "C# & Unity"
             ]
         },
         "formacao": {
+            "name":"Entrenamiento y Experiencia",
             "list": [
                 {
                     "1": "Escuela Secundaria Técnica de la",
@@ -129,6 +135,7 @@
             ]
         },
         "hard-skills": {
+            "name":"Habilidades",
             "list": [
                 "HTML5",
                 "CSS3",
@@ -147,15 +154,17 @@
             ]
         },
         "estudando": {
+            "name":"Estudando...",
             "list": [
                 "Java Web - JSF & Servlet",
-                "Java JPA & Hubernate",
+                "Java JPA & Hibernate",
                 "C# MVC & POO",
                 "C# em back-end",
                 "C# & Unity"
             ]
         },
         "formacao": {
+            "name":"Formação & Experiência",
             "list": [
                 {
                     "1": "Ensino médio técnico em",

@@ -4,9 +4,9 @@ div.dark-mode main span,
 div.dark-mode main svg,
 body.dark-mode,
 div.dark-mode {
-    background-color: #212529;
+    background-color: #212529 !important;
     color: #f8f9fa;
-    border-color: #f8f9fa!important;
+    border-color: #f8f9fa !important;
 }
 
 #capa {
@@ -43,6 +43,11 @@ div.dark-mode {
     width: max-content;
 }
 
+#profile span {
+    z-index: 9999;
+    background-color: #ffffff;
+    margin-top: 0px;
+}
 
 /*Para usuarios com base no Chromium (Chrome, Microsoft Edge Insider, Opera)*/
 
@@ -65,26 +70,41 @@ div.dark-mode {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (orientation: portrait) {
+    #foto {
+        height: 20vh;
+    }
+    #fotoLink {
+        top: 12.5vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
     #capa {
         height: 40vh;
         background-size: auto 40vh;
     }
 
     #foto {
-        height: 35vh;
+        height: 15vh;
     }
 
     #fotoLink {
-        top: 14.5vh;
+        top: 28.7vh;
+        left: calc(50vw - 8vh);
     }
 
     #nome {
-        left: calc(40vh + 5vw);
+        left: unset;
+        text-align: center;
+        margin-top: 5vh;
+        width: auto;
     }
 
     #localizacao {
-        left: calc(40vh + 5vw);
+        left: unset;
+        text-align: center;
+        width: auto;
     }
 }
 
@@ -111,7 +131,7 @@ div.dark-mode {
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
     #capa {
         height: 40vh;
         background-size: auto 40vh;
@@ -153,7 +173,7 @@ div.dark-mode {
     #nome {
         left: unset;
         text-align: center;
-        margin-top: 4vh;
+        margin-top: 5vh;
         width: auto;
     }
 
@@ -182,7 +202,7 @@ div.dark-mode {
     #nome {
         left: unset;
         text-align: center;
-        margin-top: 4vh;
+        margin-top: 5vh;
         width: auto;
     }
 
