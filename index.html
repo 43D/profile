@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 
-<body class="text-light">
+<body class="text-light light-mode">
     <header class="navbar sticky-top navbar-dark bg-dark">
         <nav class="container-fluid">
-            <a href="#main" class="navbar-brand">Allan Fel {43D}</a>
+            <a href="#main" class="navbar-brand"><span class="myname"></span></a>
             <ul class="d-flex nav">
                 <li class="nav-item mx-1">
-                    <button class="nav-link btn btn-outline-light">🌙</button>
+                    <button class="nav-link btn btn-outline-light" id="dark_light">🌙</button>
                 </li>
                 <li class="nav-item mx-1">
                     <button class="nav-link dropdown-toggle btn btn-outline-light" id="navbarDropdown" role="button"
@@ -25,16 +25,19 @@
                         🌐
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><button class="btn btn-outline-dark dropdown-item" id="1">Portugues</button></li>
-                        <li><button class="btn btn-outline-dark dropdown-item" id="1">Portugues</button></li>
-                        <li><button class="btn btn-outline-dark dropdown-item" id="1">Portugues</button></li>
+                        <li><button class="btn btn-outline-dark dropdown-item language-change" data-language="pt"
+                                disabled>Portugues</button></li>
+                        <li><button class="btn btn-outline-dark dropdown-item language-change"
+                                data-language="en">English</button></li>
+                        <li><button class="btn btn-outline-dark dropdown-item language-change"
+                                data-language="es">Español</button></li>
                     </ul>
                 </li>
 
             </ul>
         </nav>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid tema light-mode">
         <div class="row">
             <main id="main" class="col-12 p-0">
                 <div id="capa" class="bg-white px-3">
@@ -42,7 +45,7 @@
                             alt="profile" id="foto" class="rounded-circle border border-2 border-dark"></a>
                 </div>
                 <div class="text-dark">
-                    <p class="fs-1 mb-0" id="nome">Allan Fel - {43D}</p>
+                    <p class="fs-1 mb-0" id="nome"><span class="myname"></span></p>
                     <p class="fs-5" id="localizacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -50,50 +53,93 @@
                                 d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                         </svg>
-                        Toledo - PR - Brazil
+                        <span id="local"></span>
                     </p>
                 </div>
             </main>
-            <section class="col-12 px-4 text-dark px-0">
-                <div class="card border-0">
-                    <div class="card-body">
-                        <p id="apresentacao">Oi, eu sou Allan Felipe, estudante da UTFPR Toledo no curso de Sistema para internet.</p>
-                        <p><a href="https://43d.github.io/">Acesse aqui</a> o hub com a lista de projetos feito por mim.</p>
-                        <p></p>
-                    </div>
-                </div>
-            </section>
-            <footer class="bg-dark bg-gradient">
-                <div class="m-4 py-4 px-3 text-center">
-                    <p class="fs-4">Feito por Allan Fel.</p>
-                    <details id="details" class="details mb-4">
-                        <summary id="summary" class="summary">Copyright das imagem aqui.</summary>
-                        <p id="cop" class="copy">Imagem da capa tirada da Light Novel "Hentai Ouji to Warawanai Neko. <a
-                                target="_blank"
-                                href="https://myanimelist.net/manga/25876/Hentai_Ouji_to_Warawanai_Neko">Clique
-                                aqui.</a></p>
-                        <p id="cop2" class="copy">Foto de perfil retirada do twiiter. <a target="_blank"
-                                href="https://twitter.com/Haidacutlet/status/1114158671464763392">Clique aqui.</a></p>
-                    </details>
-                    <a class="bot" id="facebook" href="https://fb.com/Allangamer43D" target="_blank"><img class="social"
-                            id="icon1" src="./public/img/fb.png" alt="Facebook logo" height="30" width="30"></a>
-                    <a class="bot" id="twitter" href="https://twitter.com/Allangamer43D" target="_blank"><img
-                            class="social" id="icon2" src="./public/img/tw.png" alt="Twiiter logo" height="30"
-                            width="30"></a>
-                    <a class="bot" id="github" href="https://github.com/43D" target="_blank"><img class="social"
-                            id="icon3" src="./public/img/git.png" alt="Github logo" height="30" width="30"></a>
-                    <a class="bot" id="mail" href="mailto:allan.goioere@gmail.com" target="_blank"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                            class="bi bi-envelope" viewBox="0 0 16 16">
-                            <path
-                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                        </svg>
-                    </a>
-                </div>
-            </footer>
         </div>
     </div>
+    <div class="container tema light-mode">
+        <div class="row">
+            <section class="col-12 px-4 text-dark px-0 my-4" id="div-apresentacao">
+                <div class="border-start border-4 border-dark p-2">
+                    <p id="apresentacao"></p>
+                    <p><a href="https://43d.github.io/" id="hub1">Acesse aqui</a> <span id="hub2"></span></p>
+                </div>
+            </section>
+            <section class="col-12 col-lg-6 px-4 text-dark px-0 my-4">
+                <div class="border-start border-4 border-dark p-2">
+                    <h5>Hard Skills</h5>
+                    <ul id="hard-skills">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap 4 &amp; 5</li>
+                        <li>SASS &amp; SCSS</li>
+                        <li>JavaScript</li>
+                        <li>JavaScript - LocalStorage</li>
+                        <li>JSON</li>
+                        <li>JQuery 3</li>
+                        <li>PHP 7 &amp; 8</li>
+                        <li>Laravel</li>
+                        <li>MySQL</li>
+                        <li>Java MVC &amp; POO</li>
+                        <li>GIT &amp; GITHUB</li>
+                        <li>Apache2</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="col-12 col-lg-6 px-4 text-dark px-0 my-4">
+                <div class="border-start border-4 border-dark p-2">
+                    <h5>Estudando</h5>
+                    <ul id="estudando">
+                        <li>Java Web - JSF &amp; Servlet</li>
+                        <li>Java JPA &amp; Hubernate</li>
+                        <li>C# MVC &amp; POO</li>
+                        <li>C# em back-end</li>
+                        <li>C# &amp; Unity</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="col-12 px-4 text-dark px-0 my-4">
+                <div class="border-start border-4 border-dark p-2">
+                    <h5>Formação & Experiência</h5>
+                    <ul id="formacao">
+                        <li><span>Ensino médio técnico em</span><a href="#"> IFPR Goioerê </a><span>- Curso Técnico em
+                                informática {2015-2018}</span></li>
+                        <li><span>Ensino superior em</span><a href="#"> UTFPR Toledo </a><span>- Curso Tecnologia em
+                                Sistemas para Internet {2019 - em curso}</span></li>
+                    </ul>
+                </div>
+            </section>
 
+        </div>
+    </div>
+    <footer class="bg-dark mb-0">
+        <div class="mx-4 py-4 px-3 text-center mb-0">
+            <p class="fs-4">Feito por Allan Fel.</p>
+            <details id="details" class="details mb-4">
+                <summary id="summary" class="summary">Copyright das imagem aqui.</summary>
+                <p id="cop" class="copy">Imagem da capa tirada da Light Novel "Hentai Ouji to Warawanai Neko. <a
+                        target="_blank" href="https://myanimelist.net/manga/25876/Hentai_Ouji_to_Warawanai_Neko">Clique
+                        aqui.</a></p>
+                <p id="cop2" class="copy">Foto de perfil retirada do twiiter. <a target="_blank"
+                        href="https://twitter.com/Haidacutlet/status/1114158671464763392">Clique aqui.</a></p>
+            </details>
+            <a class="bot" id="facebook" href="https://fb.com/Allangamer43D" target="_blank"><img class="social"
+                    id="icon1" src="./public/img/fb.png" alt="Facebook logo" height="30" width="30"></a>
+            <a class="bot" id="twitter" href="https://twitter.com/Allangamer43D" target="_blank"><img class="social"
+                    id="icon2" src="./public/img/tw.png" alt="Twiiter logo" height="30" width="30"></a>
+            <a class="bot" id="github" href="https://github.com/43D" target="_blank"><img class="social" id="icon3"
+                    src="./public/img/git.png" alt="Github logo" height="30" width="30"></a>
+            <a class="bot" id="mail" href="mailto:allan.goioere@gmail.com" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -102,6 +148,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+    <script src="./public/js/app.js"></script>
 </body>
 
 </html>

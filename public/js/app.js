@@ -1,46 +1,90 @@
-var pedra = document.getElementById("pedra");
-pedra.onclick = function () {
-    cssOff();
-};
-document.getElementById("hentai").onclick = function () {
-    hentai();
-};
-document.getElementById("profile_tw").onclick = function () {
-    profile_tw();
-};
-document.getElementById("dark_light").onclick = function () {
-    toggleDarkLight();
-};
+var jsonLanguage = {};
 
-function hentai() {
-    window.open("https://myanimelist.net/manga/25876/Hentai_Ouji_to_Warawanai_Neko", "_blank");
+$(async function () {
+    // Events clicks
+    $("#dark_light").click(function () { toggleDarkLight() });
+    $(".language-change").click(function () { changeLanguage($(this).attr("data-language")) });
+
+    //Language check
+    jsonLanguage = await getJs("public/json/language.json");
+    let language = getLanguage();
+    changeLanguage(language["language"]);
+});
+
+async function getJs(json) {
+    return await getJsonPromise(json).then(result => {
+        return result;
+    });
 }
 
-function profile_tw() {
-    window.open("https://twitter.com/Haidacutlet/status/1114158671464763392", "_blank");
+function getJsonPromise(js) {
+    return new Promise((resolve, reject) => {
+        let a = js;
+        let j = $.getJSON(a);
+        resolve(j);
+    });
+}
+
+function changeLanguage(language) {
+    if (jsonLanguage[language] != undefined) {
+        languageCurrent = jsonLanguage[language];
+        $(".myname").html(languageCurrent["nome"] + " - " + languageCurrent["sobrenome"]);
+        $("#local").html(languageCurrent["localizacao"]["cidade"] + " - " + languageCurrent["localizacao"]["estado"] + "/" + languageCurrent["localizacao"]["pais"]);
+        $("#apresentacao").html(languageCurrent["apresentacao"]["p"]);
+        $("#hub1").html(languageCurrent["apresentacao"]["hub"][0]);
+        $("#hub2").html(languageCurrent["apresentacao"]["hub"][1]);
+        makeil("#hard-skills", languageCurrent["hard-skills"]["list"]);
+        makeil("#estudando", languageCurrent["estudando"]["list"]);
+        makeil2("#formacao", languageCurrent["formacao"]["list"]);
+        setLanguage({ "language": language });
+        setButtomLanguage(language);
+    }
+}
+
+function makeil(ulid, data) {
+    let ul = $(ulid);
+    ul.empty();
+    $.each(data, function (index, value) {
+        var li = $('<li/>').html(value);
+        ul.append(li);
+    });
+}
+
+function makeil2(ulid, data) {
+    let ul = $(ulid);
+    ul.empty();
+    $.each(data, function (index, value) {
+        var span1 = $('<span/>').html(value["1"]);
+        var span2 = $('<a/>').html(" " + value["2"] + " ").attr("href", "#");
+        var span3 = $('<span/>').html(value["3"]);
+        var li = $('<li/>').html([span1, span2, span3]);
+        ul.append(li);
+    });
+}
+
+function getLanguage() {
+    if (localStorage.language == undefined)
+        setLanguage({ "language": "pt" });
+    return JSON.parse(localStorage.language);
+}
+
+function setLanguage(data) {
+    localStorage.setItem("language", JSON.stringify(data));
+}
+
+function setButtomLanguage(language) {
+    let a = $(".language-change");
+    a.prop("disabled", false);
+    $.each(a, function (index, value) {
+        if (value.attributes[1].nodeValue == language)
+            value.disabled = true;
+    });
 }
 
 function toggleDarkLight() {
-    var body = document.getElementById("body");
-    var currentClass = body.className;
-    body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-}
-
-function cssOff() {
-    if (document.styleSheets[0].disabled == false) {
-        document.styleSheets[0].disabled = true;
-        pedra.innerHTML = "Ativar CSS";
-    } else {
-        document.styleSheets[0].disabled = false;
-        pedra.innerHTML = "Desativar CSS";
-    }
-}
-
-function MenuOculto() {
-    var x = document.getElementById("nav");
-    if (x.className === "nav") {
-        x.className += " responsive";
-    } else {
-        x.className = "nav";
-    }
+    var tema = $(".tema");
+    var currentClass = tema[0].classList[2];
+    var newClass = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+    tema.removeClass(currentClass).addClass(newClass);
+    $("body").removeClass(currentClass).addClass(newClass);
 }

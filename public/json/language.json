@@ -1,0 +1,173 @@
+{
+    "en": {
+        "nome": "Allan Fel",
+        "sobrenome": "{43D}",
+        "localizacao": {
+            "cidade": "Toledo",
+            "estado": "PR",
+            "pais": "Brazil"
+        },
+        "apresentacao": {
+            "p": "Hi, I'm Alan Felipe, student at UTFPR Toledo in the course Sistema para internet",
+            "hub": [
+                "Access here",
+                "to open a hub with the list of my projects."
+            ]
+        },
+        "hard-skills": {
+            "list": [
+                "HTML5",
+                "CSS3",
+                "Bootstrap 4 & 5",
+                "SASS & SCSS",
+                "JavaScript",
+                "JavaScript - LocalStorage",
+                "JSON",
+                "JQuery 3",
+                "PHP 7 & 8",
+                "Laravel",
+                "MySQL",
+                "Java MVC & POO",
+                "GIT & GITHUB",
+                "Apache2"
+            ]
+        },
+        "estudando": {
+            "list": [
+                "Java Web - JSF & Servlet",
+                "Java JPA & Hubernate",
+                "C# MVC & POO",
+                "C# em back-end",
+                "C# & Unity"
+            ]
+        },
+        "formacao": {
+            "list": [
+                {
+                    "1": "Technical High School at",
+                    "2": "IFPR Goioerê",
+                    "3": "- Computer Technician Course {2015-2018}"
+                },
+                {
+                    "1": "Higher education at",
+                    "2": "UTFPR Toledo",
+                    "3": "Internet Systems Technology Course {2019 - present}."
+                }
+            ]
+        }
+    },
+    "es": {
+        "nome": "Allan Fel",
+        "sobrenome": "{43D}",
+        "localizacao": {
+            "cidade": "Toledo",
+            "estado": "PR",
+            "pais": "Brasil"
+        },
+        "apresentacao": {
+            "p": "Hola, soy Allan Felipe, estudiante de la UTFPR Toledo en el curso de Sistema de Internet.",
+            "hub": [
+                "Accede aquí",
+                "para abrir un hub con la lista de mis proyectos."
+            ]
+        },
+        "hard-skills": {
+            "list": [
+                "HTML5",
+                "CSS3",
+                "Bootstrap 4 & 5",
+                "SASS & SCSS",
+                "JavaScript",
+                "JavaScript - LocalStorage",
+                "JSON",
+                "JQuery 3",
+                "PHP 7 & 8",
+                "Laravel",
+                "MySQL",
+                "Java MVC & POO",
+                "GIT & GITHUB",
+                "Apache2"
+            ]
+        },
+        "estudando": {
+            "list": [
+                "Java Web - JSF & Servlet",
+                "Java JPA & Hubernate",
+                "C# MVC & POO",
+                "C# em back-end",
+                "C# & Unity"
+            ]
+        },
+        "formacao": {
+            "list": [
+                {
+                    "1": "Escuela Secundaria Técnica de la",
+                    "2": "IFPR Goioerê",
+                    "3": "- Curso de Técnico Informático {2015-2018}"
+                },
+                {
+                    "1": "Educación superior en la",
+                    "2": "UTFPR Toledo",
+                    "3": "- Curso de Tecnología de Sistemas de Internet {2019 - actualidad}"
+                }
+            ]
+        }
+    },
+    "pt": {
+        "nome": "Allan Fel",
+        "sobrenome": "{43D}",
+        "localizacao": {
+            "cidade": "Toledo",
+            "estado": "PR",
+            "pais": "Brasil"
+        },
+        "apresentacao": {
+            "p": "Oi, eu sou Allan Felipe, estudante da UTFPR Toledo no curso de Sistema para internet.",
+            "hub": [
+                "Acesse aqui",
+                "para abrir hub com a lista dos meus projetos."
+            ]
+        },
+        "hard-skills": {
+            "list": [
+                "HTML5",
+                "CSS3",
+                "Bootstrap 4 & 5",
+                "SASS & SCSS",
+                "JavaScript",
+                "JavaScript - LocalStorage",
+                "JSON",
+                "JQuery 3",
+                "PHP 7 & 8",
+                "Laravel",
+                "MySQL",
+                "Java MVC & POO",
+                "GIT & GITHUB",
+                "Apache2"
+            ]
+        },
+        "estudando": {
+            "list": [
+                "Java Web - JSF & Servlet",
+                "Java JPA & Hubernate",
+                "C# MVC & POO",
+                "C# em back-end",
+                "C# & Unity"
+            ]
+        },
+        "formacao": {
+            "list": [
+                {
+                    "1": "Ensino médio técnico em",
+                    "2": "IFPR Goioerê",
+                    "3": "- Curso Técnico em informática {2015-2018}"
+                },
+                {
+                    "1": "Ensino superior em",
+                    "2": "UTFPR Toledo",
+                    "3": "- Curso Tecnologia em Sistemas para Internet {2019 - em curso}"
+                }
+            ]
+        }
+    }
+}

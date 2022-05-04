@@ -1,16 +1,11 @@
-body {
-    margin: 0px;
-    font-size: 1.1rem;
-}
-
-body.dark-mode {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-body.light-mode {
-    background-color: #eeeeee;
-    color: #000000;
+div.dark-mode section div,
+div.dark-mode main span,
+div.dark-mode main svg,
+body.dark-mode,
+div.dark-mode {
+    background-color: #212529;
+    color: #f8f9fa;
+    border-color: #f8f9fa!important;
 }
 
 #capa {
@@ -61,6 +56,12 @@ body.light-mode {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #7f7f7f;
+}
+
+@media (min-width: 992px) {
+    #div-apresentacao {
+        padding-left: calc(50% - 345px) !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
