@@ -74,6 +74,7 @@ div.dark-mode {
     #foto {
         height: 20vh;
     }
+
     #fotoLink {
         top: 12.5vh;
     }
@@ -92,6 +93,10 @@ div.dark-mode {
     #fotoLink {
         top: 28.7vh;
         left: calc(50vw - 8vh);
+    }
+
+    #profile {
+        text-align: center;
     }
 
     #nome {
@@ -170,6 +175,10 @@ div.dark-mode {
         left: calc(50vw - 12vh);
     }
 
+    #profile {
+        text-align: center;
+    }
+
     #nome {
         left: unset;
         text-align: center;
@@ -197,6 +206,10 @@ div.dark-mode {
     #fotoLink {
         top: 8.75vh;
         left: calc(50vw - 10vh);
+    }
+
+    #profile {
+        text-align: center;
     }
 
     #nome {
