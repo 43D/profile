@@ -5,7 +5,8 @@
         "localizacao": {
             "cidade": "Toledo",
             "estado": "PR",
-            "pais": "Brazil"
+            "pais": "Brazil",
+            "coordenada": "https://www.google.com/maps/@-24.7305561,-53.7179353,12.75z/place/Toledo+-+PR"
         },
         "apresentacao": {
             "p": "Hi, I'm Alan Felipe, student at UTFPR Toledo in the course Sistema para internet",
@@ -14,7 +15,7 @@
                 "to open a hub with the list of my projects."
             ]
         },
-        "hard-skills": {
+        "hard_skills": {
             "name":"Hard Skills",
             "list": [
                 "HTML5",
@@ -49,12 +50,14 @@
                 {
                     "1": "Technical High School at",
                     "2": "IFPR Goioerê",
-                    "3": "- Computer Technician Course {2015-2018}"
+                    "3": "- Computer Technician Course {2015-2018}",
+                    "4": "https://www.google.com/maps/place/Instituto+Federal+do+Paran%C3%A1+-+Campus+Avan%C3%A7ado+Goioer%C3%AA/@-24.1839314,-53.04763,17.25z"
                 },
                 {
                     "1": "Higher education at",
                     "2": "UTFPR Toledo",
-                    "3": "Internet Systems Technology Course {2019 - present}."
+                    "3": "Internet Systems Technology Course {2019 - present}.",
+                    "4": "https://www.google.com/maps/place/UTFPR+-+C%C3%A2mpus+Toledo/@-24.7331501,-53.7640464,17z"
                 }
             ]
         }
@@ -65,7 +68,8 @@
         "localizacao": {
             "cidade": "Toledo",
             "estado": "PR",
-            "pais": "Brasil"
+            "pais": "Brasil",
+            "coordenada": "https://www.google.com/maps/@-24.7305561,-53.7179353,12.75z/place/Toledo+-+PR"
         },
         "apresentacao": {
             "p": "Hola, soy Allan Felipe, estudiante de la UTFPR Toledo en el curso de Sistema de Internet.",
@@ -74,7 +78,7 @@
                 "para abrir un hub con la lista de mis proyectos."
             ]
         },
-        "hard-skills": {
+        "hard_skills": {
             "name":"Habilidades",
             "list": [
                 "HTML5",
@@ -109,12 +113,14 @@
                 {
                     "1": "Escuela Secundaria Técnica de la",
                     "2": "IFPR Goioerê",
-                    "3": "- Curso de Técnico Informático {2015-2018}"
+                    "3": "- Curso de Técnico Informático {2015-2018}",
+                    "4": "https://www.google.com/maps/place/Instituto+Federal+do+Paran%C3%A1+-+Campus+Avan%C3%A7ado+Goioer%C3%AA/@-24.1839314,-53.04763,17.25z"
                 },
                 {
                     "1": "Educación superior en la",
                     "2": "UTFPR Toledo",
-                    "3": "- Curso de Tecnología de Sistemas de Internet {2019 - actualidad}"
+                    "3": "- Curso de Tecnología de Sistemas de Internet {2019 - actualidad}",
+                    "4": "https://www.google.com/maps/place/UTFPR+-+C%C3%A2mpus+Toledo/@-24.7331501,-53.7640464,17z"
                 }
             ]
         }
@@ -125,7 +131,8 @@
         "localizacao": {
             "cidade": "Toledo",
             "estado": "PR",
-            "pais": "Brasil"
+            "pais": "Brasil",
+            "coordenada": "https://www.google.com/maps/@-24.7305561,-53.7179353,12.75z/place/Toledo+-+PR"
         },
         "apresentacao": {
             "p": "Oi, eu sou Allan Felipe, estudante da UTFPR Toledo no curso de Sistema para internet.",
@@ -134,7 +141,7 @@
                 "para abrir hub com a lista dos meus projetos."
             ]
         },
-        "hard-skills": {
+        "hard_skills": {
             "name":"Habilidades",
             "list": [
                 "HTML5",
@@ -169,12 +176,14 @@
                 {
                     "1": "Ensino médio técnico em",
                     "2": "IFPR Goioerê",
-                    "3": "- Curso Técnico em informática {2015-2018}"
+                    "3": "- Curso Técnico em informática {2015-2018}",
+                    "4": "https://www.google.com/maps/place/Instituto+Federal+do+Paran%C3%A1+-+Campus+Avan%C3%A7ado+Goioer%C3%AA/@-24.1839314,-53.04763,17.25z"
                 },
                 {
                     "1": "Ensino superior em",
                     "2": "UTFPR Toledo",
-                    "3": "- Curso Tecnologia em Sistemas para Internet {2019 - em curso}"
+                    "3": "- Curso Tecnologia em Sistemas para Internet {2019 - em curso}",
+                    "4": "https://www.google.com/maps/place/UTFPR+-+C%C3%A2mpus+Toledo/@-24.7331501,-53.7640464,17z"
                 }
             ]
         }

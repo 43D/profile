@@ -9,7 +9,7 @@ $(async function () {
     //Language check
     jsonLanguage = await getJs("public/json/language.json");
     let language = getLanguage();
-    changeLanguage(language["language"]);
+    changeLanguage(language.language);
 
     //Theme check
     $(".tema").removeClass("dark-mode").removeClass("light-mode").addClass(getTheme());
@@ -33,17 +33,18 @@ function getJsonPromise(js) {
 function changeLanguage(language) {
     if (jsonLanguage[language] != undefined) {
         languageCurrent = jsonLanguage[language];
-        $(".myname").html(languageCurrent["nome"] + " - " + languageCurrent["sobrenome"]);
-        $("#local").html(languageCurrent["localizacao"]["cidade"] + " - " + languageCurrent["localizacao"]["estado"] + "/" + languageCurrent["localizacao"]["pais"]);
-        $("#apresentacao").html(languageCurrent["apresentacao"]["p"]);
-        $("#hub1").html(languageCurrent["apresentacao"]["hub"][0]);
-        $("#hub2").html(languageCurrent["apresentacao"]["hub"][1]);
-        $("#skills-name").html(languageCurrent["hard-skills"]["name"]);
-        makeil("#hard-skills", languageCurrent["hard-skills"]["list"]);
-        $("#estudando-name").html(languageCurrent["estudando"]["name"]);
-        makeil("#estudando", languageCurrent["estudando"]["list"]);
-        $("#formacao-name").html(languageCurrent["formacao"]["name"]);
-        makeil2("#formacao", languageCurrent["formacao"]["list"]);
+        $(".myname").html(languageCurrent.nome + " - " + languageCurrent.sobrenome);
+        $("#localizacao").attr("href", languageCurrent.localizacao.coordenada)
+        $("#local").html(languageCurrent.localizacao.cidade + " - " + languageCurrent.localizacao.estado + "/" + languageCurrent.localizacao.pais);
+        $("#apresentacao").html(languageCurrent.apresentacao.p);
+        $("#hub1").html(languageCurrent.apresentacao.hub[0]);
+        $("#hub2").html(languageCurrent.apresentacao.hub[1]);
+        $("#skills-name").html(languageCurrent.hard_skills.name);
+        makeil("#hard-skills", languageCurrent.hard_skills.list);
+        $("#estudando-name").html(languageCurrent.estudando.name);
+        makeil("#estudando", languageCurrent.estudando.list);
+        $("#formacao-name").html(languageCurrent.formacao.name);
+        makeil2("#formacao", languageCurrent.formacao.list);
         setLanguage({ "language": language });
         setButtomLanguage(language);
     }
@@ -62,9 +63,9 @@ function makeil2(ulid, data) {
     let ul = $(ulid);
     ul.empty();
     $.each(data, function (index, value) {
-        var span1 = $('<span/>').html(value["1"]);
-        var span2 = $('<a/>').html(" " + value["2"] + " ").attr("href", "#");
-        var span3 = $('<span/>').html(value["3"]);
+        var span1 = $('<span/>').html(value["1"] + " ");
+        var span2 = $('<a/>').html(value["2"]).attr("href", value["4"]).attr("target", "_blank");
+        var span3 = $('<span/>').html(" " + value["3"]);
         var li = $('<li/>').html([span1, span2, span3]);
         ul.append(li);
     });
