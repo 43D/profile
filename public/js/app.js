@@ -71,7 +71,7 @@ function makeil2(ulid, data) {
     });
 }
 
-function getLanguage() {
+function getLanguage() { 
     if (localStorage.language == undefined)
         setLanguage({ "language": "pt" });
     return JSON.parse(localStorage.language);
