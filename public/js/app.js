@@ -24,9 +24,8 @@ async function getJs(json) {
 
 function getJsonPromise(js) {
     return new Promise((resolve, reject) => {
-        let a = js;
-        let j = $.getJSON(a);
-        resolve(j);
+        const res = $.getJSON(js);
+        resolve(res);
     });
 }
 
@@ -45,6 +44,8 @@ function changeLanguage(language) {
         makeil("#estudando", languageCurrent.estudando.list);
         $("#formacao-name").html(languageCurrent.formacao.name);
         makeil2("#formacao", languageCurrent.formacao.list);
+        $("#dev-tool-name").html(languageCurrent.devtool.name);
+        makeil("#dev-tool", languageCurrent.devtool.list);
         setLanguage({ "language": language });
         setButtomLanguage(language);
     }
@@ -71,7 +72,7 @@ function makeil2(ulid, data) {
     });
 }
 
-function getLanguage() { 
+function getLanguage() {
     if (localStorage.language == undefined)
         setLanguage({ "language": "pt" });
     return JSON.parse(localStorage.language);

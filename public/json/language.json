@@ -31,17 +31,21 @@
                 "MySQL",
                 "Java MVC & POO",
                 "GIT & GITHUB",
-                "Apache2"
+                "Apache2",
+                "Java JPA & Hibernate",
+                "Java Web - JSF & Servlet"
             ]
         },
         "estudando": {
             "name":"Studying...",
             "list": [
-                "Java Web - JSF & Servlet",
-                "Java JPA & Hibernate",
+                "Spring Boot",
+                "Rest API",
                 "C# MVC & POO",
                 "C# in back-end",
-                "C# & Unity"
+                "C# & Unity",
+                "Clean Code",
+                "SOLID"
             ]
         },
         "formacao": {
@@ -59,6 +63,17 @@
                     "3": "Internet Systems Technology Course {2019 - present}.",
                     "4": "https://www.google.com/maps/place/UTFPR+-+C%C3%A2mpus+Toledo/@-24.7331501,-53.7640464,17z"
                 }
+            ]
+        },
+        "devtool":{
+            "name": "Tools & Desktop",
+            "list": [
+                "Windows 10",
+                "Ubuntu 22.04 WSL",
+                "Visual Studio Code",
+                "Eclipse Entrepise",
+                "Netbeans 12",
+                "GIT (bash linux)"
             ]
         }
     },
@@ -94,17 +109,21 @@
                 "MySQL",
                 "Java MVC & POO",
                 "GIT & GITHUB",
-                "Apache2"
+                "Apache2",
+                "Java JPA & Hibernate",
+                "Java Web - JSF & Servlet"
             ]
         },
         "estudando": {
             "name":"Estudiando...",
             "list": [
-                "Java Web - JSF & Servlet",
-                "Java JPA & Hibernate",
+                "Spring Boot",
+                "Rest API",
                 "C# MVC & POO",
                 "C# en back-end",
-                "C# & Unity"
+                "C# & Unity",
+                "Clean Code",
+                "SOLID"
             ]
         },
         "formacao": {
@@ -123,7 +142,18 @@
                     "4": "https://www.google.com/maps/place/UTFPR+-+C%C3%A2mpus+Toledo/@-24.7331501,-53.7640464,17z"
                 }
             ]
-        } 
+        },
+        "devtool":{
+            "name": "Herramientas y escritorio",
+            "list":[
+                "Windows 10",
+                "Ubuntu 22.04 WSL",
+                "Visual Studio Code",
+                "Eclipse Entrepise",
+                "Netbeans 12",
+                "GIT (bash linux)"
+            ]
+        }
     },
     "pt": {
         "nome": "Allan Fel",
@@ -157,17 +187,21 @@
                 "MySQL",
                 "Java MVC & POO",
                 "GIT & GITHUB",
-                "Apache2"
+                "Apache2",
+                "Java JPA & Hibernate",
+                "Java Web - JSF & Servlet"
             ]
         },
         "estudando": {
             "name":"Estudando...",
             "list": [
-                "Java Web - JSF & Servlet",
-                "Java JPA & Hibernate",
+                "Spring Boot",
+                "Rest API",
                 "C# MVC & POO",
                 "C# em back-end",
-                "C# & Unity"
+                "C# & Unity",
+                "Clean Code",
+                "SOLID"
             ]
         },
         "formacao": {
@@ -185,6 +219,17 @@
                     "3": "- Curso Tecnologia em Sistemas para Internet {2019 - em curso}",
                     "4": "https://www.google.com/maps/place/UTFPR+-+C%C3%A2mpus+Toledo/@-24.7331501,-53.7640464,17z"
                 }
+            ]
+        },
+        "devtool":{
+            "name": "Ferramentas & Ambiente de trabalho",
+            "list": [
+                "Windows 10",
+                "Ubuntu 22.04 WSL",
+                "Visual Studio Code",
+                "Eclipse Entrepise",
+                "Netbeans 12",
+                "GIT (bash linux)"
             ]
         }
     }
